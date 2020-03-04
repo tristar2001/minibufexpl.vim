@@ -312,7 +312,7 @@ endif
 let g:miniBufExplDebugOutput = ''
 
 " check to see what platform we are in
-if (&shellslash == 1) " (has('unix'))
+if (&shellslash == 1) || (has('unix'))
     let s:PathSeparator = '/'
 else
     let s:PathSeparator = '\'
